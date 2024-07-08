@@ -15,7 +15,9 @@
 			{slice.primary.last_name}
 		</span>
 	</h1>
-	<span>
+	<span
+		class="block bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 bg-clip-text text-transparent uppercase text-2xl font-bold tracking-[.2em] md:text-4xl"
+	>
 		{slice.primary.tag_line}
 	</span>
 </section>
