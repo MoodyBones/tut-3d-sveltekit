@@ -8,10 +8,10 @@
 	<h1
 		class="mb-2 md:mb-8 text-[clamp(3rem,20vmin,13rem)] font-extrabold leading-none tracking-tighter text-nowrap"
 	>
-		<span>
+		<span class="block text-slate-300">
 			{slice.primary.firstname}
 		</span>
-		<span>
+		<span class="block text-slate-500 -mt-[.2em]">
 			{slice.primary.last_name}
 		</span>
 	</h1>
