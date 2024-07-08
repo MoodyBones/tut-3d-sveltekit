@@ -5,7 +5,9 @@
 </script>
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-	<h1>
+	<h1
+		class="mb-2 md:mb-8 text-[clamp(3rem,20vmin,13rem)] font-extrabold leading-none tracking-tighter text-nowrap"
+	>
 		<span>
 			{slice.primary.firstname}
 		</span>
