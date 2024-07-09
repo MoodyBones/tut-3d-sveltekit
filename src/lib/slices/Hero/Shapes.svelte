@@ -3,6 +3,7 @@
 	import { PerspectiveCamera } from 'three';
 	import * as THREE from 'three';
 	import Geometry from './Geometry.svelte';
+	import { ContactShadows } from '@threlte/extras';
 </script>
 
 <Threlte.PerspectiveCamera
@@ -16,7 +17,8 @@
 
 <Threlte.DirectionalLight position={[0, 10, 30]} intensity={2}></Threlte.DirectionalLight>
 
-\
+<ContactShadows position={[0, -3.5, 0]} opacity={0.65} scale={40} blur={1} far={9} />
+
 <!-- Gem -->
 <Geometry position={[0, 0, 0]} rate={0.3} geometry={new THREE.IcosahedronGeometry(3)} />
 
