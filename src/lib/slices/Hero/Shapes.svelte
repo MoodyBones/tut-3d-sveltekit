@@ -2,6 +2,7 @@
 	import { T as Threlte } from '@threlte/core';
 	import { PerspectiveCamera } from 'three';
 	import * as THREE from 'three';
+	import Geometry from './Geometry.svelte';
 </script>
 
 <Threlte.PerspectiveCamera
@@ -12,3 +13,5 @@
 	near={1}
 	far={40}
 />
+
+<Geometry />
