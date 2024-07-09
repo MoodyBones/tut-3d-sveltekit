@@ -15,3 +15,5 @@
 />
 
 <Geometry />
+
+<Threlte.DirectionalLight position={[0, 10, 30]} intensity={2}></Threlte.DirectionalLight>
