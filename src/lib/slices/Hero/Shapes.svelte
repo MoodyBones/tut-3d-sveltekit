@@ -36,3 +36,6 @@
 	rate={0.5}
 	geometry={new THREE.TorusGeometry(0.6, 0.25, 32)}
 />
+
+<!-- Diamond -->
+<Geometry position={[1.6, 1.6, -4]} rate={0.7} geometry={new THREE.OctahedronGeometry(1.5)} />
