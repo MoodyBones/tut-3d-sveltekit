@@ -3,7 +3,7 @@
 	import { PerspectiveCamera } from 'three';
 	import * as THREE from 'three';
 	import Geometry from './Geometry.svelte';
-	import { ContactShadows } from '@threlte/extras';
+	import { ContactShadows, Environment } from '@threlte/extras';
 </script>
 
 <Threlte.PerspectiveCamera
@@ -15,7 +15,7 @@
 	far={40}
 />
 
-<Threlte.DirectionalLight position={[0, 10, 30]} intensity={2}></Threlte.DirectionalLight>
+<Environment files="smallroom.hdr" path="/" format="hdr" />
 
 <ContactShadows position={[0, -3.5, 0]} opacity={0.65} scale={40} blur={1} far={9} />
 
