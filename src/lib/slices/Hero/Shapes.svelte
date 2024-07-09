@@ -14,6 +14,15 @@
 	far={40}
 />
 
-<Geometry />
-
 <Threlte.DirectionalLight position={[0, 10, 30]} intensity={2}></Threlte.DirectionalLight>
+
+\
+<!-- Gem -->
+<Geometry position={[0, 0, 0]} rate={0.3} geometry={new THREE.IcosahedronGeometry(3)} />
+
+<!-- Pill -->
+<Geometry
+	position={[1, -0.75, 4]}
+	rate={0.3}
+	geometry={new THREE.CapsuleGeometry(0.5, 1.6, 2, 16)}
+/>
