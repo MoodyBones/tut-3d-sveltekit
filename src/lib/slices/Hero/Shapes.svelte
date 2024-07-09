@@ -29,3 +29,10 @@
 
 <!-- Soccer Ball -->
 <Geometry position={[-1.4, 2, -4]} rate={0.6} geometry={new THREE.DodecahedronGeometry(1.5)} />
+
+<!-- Donut -->
+<Geometry
+	position={[-0.8, -0.75, 5]}
+	rate={0.5}
+	geometry={new THREE.TorusGeometry(0.6, 0.25, 32)}
+/>
