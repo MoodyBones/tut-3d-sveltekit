@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { T as Threlte } from '@threlte/core';
+	import { Float } from '@threlte/extras';
 	import * as THREE from 'three';
 
 	export let position: [number, number, number] = [0, 0, 0];
@@ -13,4 +14,13 @@
 	});
 </script>
 
-<Threlte.Mesh {geometry} {material}></Threlte.Mesh>
+<Threlte.Group position={position.map((p) => p * 2)}>
+	<Float
+		speed={5 * rate}
+		rotationSpeed={5 * rate}
+		rotationIntensity={5 * rate}
+		floatIntensity={5 * rate}
+	>
+		<Threlte.Mesh {geometry} {material}></Threlte.Mesh>
+	</Float>
+</Threlte.Group>
