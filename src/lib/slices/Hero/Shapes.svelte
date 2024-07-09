@@ -26,3 +26,6 @@
 	rate={0.3}
 	geometry={new THREE.CapsuleGeometry(0.5, 1.6, 2, 16)}
 />
+
+<!-- Soccer Ball -->
+<Geometry position={[-1.4, 2, -4]} rate={0.6} geometry={new THREE.DodecahedronGeometry(1.5)} />
